@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>a
+<script>
+    let a = [];
+    let b =[];
+    let c =[];
+    do {
+        let input = prompt("Nhap 10 so array A vao duoi dang (num1,num2,...,num10)");
+        a = input.split(",");
+    } while (a.length != 10)
+    do {
+        let input = prompt("Nhap 10 so array B vao duoi dang (num1,num2,...,num10)");
+        b = input.split(",");
+    } while (b.length != 10)
+
+    for(i =0; i<a.length;i++){
+        c.push(a[i]+" + "+ b[i]);
+    }
+    document.write(c);
+</script>
+</body>
+</html>

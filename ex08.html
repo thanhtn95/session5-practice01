@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    do {
+        let input = prompt("Nhap 10 so vao duoi dang (num1,num2,...,num10)");
+        a = input.split(",");
+    } while (a.length != 10)
+    a.sort((a, b) => b - a);
+    document.write(a);
+</script>
+</body>
+</html>

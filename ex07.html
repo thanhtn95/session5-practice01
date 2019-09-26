@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b =[];
+    do {
+        let input = prompt("Nhap 10 so vao duoi dang (num1,num2,...,num10)");
+        a = input.split(",");
+    } while (a.length != 10)
+    let answ = parseInt(prompt("Nhap so V: "));
+    for(i =0;i<a.length;i++){
+        if(a[i] ==answ){
+
+        }else{
+            b.push(a[i]);
+        }
+    }
+    document.write(b);
+
+</script>
+</body>
+</html>

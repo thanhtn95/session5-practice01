@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let input = prompt("Nhap array so vao duoi dang (num1,num2,...,numN)");
+    a = input.split(",");
+    let max = parseInt(a[0]);
+    let avg =0;
+    for(i = 0;i<a.length;i++){
+        if(max<parseInt(a[i])){
+            max =parseInt(a[i]);
+        }
+        avg+=parseInt(a[i]);
+    }
+    avg = avg/a.length;
+    document.write("Gia tri max cua array da nhap la: "+max+" va gia tri trung binh cua cac phan tu trong array la : "+avg);
+</script>
+</body>
+</html>

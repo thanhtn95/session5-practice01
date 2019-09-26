@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    do{
+        let input = prompt("Nhap 10 so vao duoi dang (num1,num2,...,num10)");
+        a = input.split(",");
+    }while(a.length!=10)
+    let max=parseInt(a[0]);
+    let pos =0;
+    for(i=1;i<a.length;i++){
+        if(max<parseInt(a[i])){
+            max = parseInt(a[i]);
+            pos = i;
+        }
+    }
+    document.write("max cua array nhap vao la "+max+" tai vi tri: "+(pos+1));
+</script>
+</body>
+</html>
